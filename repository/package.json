@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "@ecommerce/repository",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "serve": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "peerDependencies": {
+    "eslint-config-airbnb-base": "^14.2.0"
+  },
+  "dependencies": {
+    "@ecommerce/utils": ">=0.0.0",
+    "@types/knex": "^0.16.1",
+    "knex": "^0.95.6",
+    "moment": "^2.29.1",
+    "typescript": "^4.3.2"
+  }
+}

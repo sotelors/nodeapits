@@ -1,0 +1,1 @@
+alter table ecommerce.internal_cache alter column exp type numeric using exp::numeric;

@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "workspaces": [
+    "accessData",
+    "repository",
+    "businessLogic",
+    "utils",
+    "api"
+  ],
+  "name": "ecommerce-project",
+  "version": "1.0.0",
+  "description": "api para proyecto ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "wsrun -p @ecommerce/api -r -c serve",
+    "build": "wsrun -t -r -m -c build",
+    "lint": "wsrun -m -c lint"
+  },
+  "author": "Pedro Meneses",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "moment": "^2.29.1",
+    "uuid-apikey": "^1.5.2",
+    "wsrun": "^5.2.4"
+  }
+}
