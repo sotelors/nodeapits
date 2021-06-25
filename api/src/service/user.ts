@@ -5,6 +5,7 @@ import { Catch } from '../decorator/catchDecorator'
 import { requestErrorHandler } from '../handler/errorHandler'
 import IGetAllUserResponseModel from '../model/responses/IGetAllUser';
 
+
 export default class UserService {
     userBl!: UserBl
 
